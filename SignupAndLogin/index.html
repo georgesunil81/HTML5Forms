@@ -5,6 +5,30 @@
 	    <link type="text/css" rel="stylesheet" href="signup_login.css" />
 	</head>
 	<body>
-
+		<input type="checkbox" id="form-switch">
+	    <form id="login">
+	    	<label for="username">User Name</label>
+	        <input id="username" type="text" placeholder="User Name" required>
+	        <label for="password">Password</label>
+	        <input id="password" type="password" placeholder="Password" required>
+	        <button type="submit">Login</button>
+	        <label for="form-switch"><span>New user? Please register.</span></label>
+	    </form>
+	    <form id="signup">
+	    	<label for="first-name">First Name</label>
+	        <input id="first-name" type="text" placeholder="First Name" required>
+	        <label for="last-name">Last Name</label>
+	        <input id="last-name" type="text" placeholder="Last Name" required>
+	        <label for="email-address">Email Address</label>
+	        <input id="email-address" type="email" placeholder="Email Address" required>
+	        <label for="date-of-birth">Date of Birth</label>
+	        <input id="date-of-birth" type="text" placeholder="Date of Birth" required>
+	        <label for="password">Password</label>
+	        <input id="password" type="password" placeholder="Password" required>
+	        <label for="confirm-password">Confirm Password</label>
+	        <input id="confirm-password" type="password" placeholder="Confirm Password" required>
+	        <button type="submit">Submit</button>
+	        <label for="form-switch">Already a member? Sign in now.</label>
+	    </form>
 	</body>
 </html>
