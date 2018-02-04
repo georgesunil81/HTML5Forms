@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <title>Shipping and Billing Form</title>
-	    <link type="text/css" rel="stylesheet" href="shipping_billing.css" />
-	</head>
-	<body>
 
-	</body>
+<head>
+    <title>Shipping and Billing Form</title>
+    <link type="text/css" rel="stylesheet" href="shipping_billing.css" />
+</head>
+
+<body>
+    <form>
+        <h1>Shipping and Billing Address</h1>
+        <section class="shipping-address">
+            <fieldset>
+                <legend>Shipping</legend>
+                <label for="shipping-first-name">First Name</label>
+                <input id="shipping-first-name" type="text" placeholder="First Name" required>
+                <label for="shipping-last-name">Last Name</label>
+                <input id="shipping-last-name" type="text" placeholder="Last Name" required>
+                <label for="shipping-address">Address</label>
+                <input id="shipping-address" type="text" placeholder="Address" required>
+                <label for="shipping-city">City</label>
+                <input id="shipping-city" type="text" placeholder="City" required>
+                <label for="shipping-county">County</label>
+                <input id="shipping-county" type="text" placeholder="County" required>
+            </fieldset>
+        </section>
+        <br>
+       	<input id="billing-address-same" type="checkbox">
+       	<label for="billing-address-same">Billing Address is the same as the Shipping Address</label>        	
+        <section class="billing-address">
+            <fieldset>
+                <legend>Billing</legend>
+                <label for="billing-first-name">First Name</label>
+                <input id="billing-first-name" type="text" placeholder="First Name" required>
+                <label for="billing-last-name">Last Name</label>
+                <input id="billing-last-name" type="text" placeholder="Last Name" required>
+                <label for="billing-address">Address</label>
+                <input id="billing-address" type="text" placeholder="Address" required>
+                <label for="billing-city">City</label>
+                <input id="billing-city" type="text" placeholder="City" required>
+                <label for="billing-county">County</label>
+                <input id="billing-county" type="text" placeholder="County" required>
+            </fieldset>
+        </section>        
+    </form>
+</body>
+
 </html>
