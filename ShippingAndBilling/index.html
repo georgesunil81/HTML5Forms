@@ -8,7 +8,7 @@
 
 <body>
     <form>
-        <h1>Shipping and Billing Address</h1>
+        <h2>Shipping and Billing Address</h2>
         <section class="shipping-address">
             <fieldset>
                 <legend>Shipping</legend>
@@ -25,8 +25,8 @@
             </fieldset>
         </section>
         <br>
-       	<input id="billing-address-same" type="checkbox">
-       	<label for="billing-address-same">Billing Address is the same as the Shipping Address</label>        	
+        <input id="billing-address-same" type="checkbox">
+        <label for="billing-address-same">Billing Address is the same as the Shipping Address</label>
         <section class="billing-address">
             <fieldset>
                 <legend>Billing</legend>
@@ -41,7 +41,60 @@
                 <label for="billing-county">County</label>
                 <input id="billing-county" type="text" placeholder="County" required>
             </fieldset>
-        </section>        
+        </section>
+    </form>
+    <form class="credit-card">
+        <h2>Credit/Debit card information</h2>
+    	<div class="credit-card-form-body">
+ 			<input id="cardholder-name" type="text" placeholder="Cardholder's Name">
+            <input id="card-number" type="text" placeholder="Card Number" maxlength="19">
+            <div class="date-field">
+                <div class="month">
+                    <select id="month">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <select id="year">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-verification">
+                <div class="cvv-input">
+                    <input type="text" placeholder="CVV" maxlength="3">
+                </div>
+                <div class="cvv-details">
+                    <p>CVV is usually 3 or 4 numbers found
+                    <br> on the side of the signature strip</p>
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 

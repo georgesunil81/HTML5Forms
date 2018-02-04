@@ -1,42 +1,80 @@
 form {
-  background: #68a6fb;
-  padding: 5px 30px 15px 30px;
-  max-width: 500px;
-  margin: 8px auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    background: #68a6fb;
+    padding: 5px 30px 15px 30px;
+    max-width: 500px;
+    margin: 8px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
 input {
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 95%;
-  border: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #CCC;
 }
 
 label {
-  cursor: pointer;
-  color: white;
+    cursor: pointer;
+    color: white;
 }
 
 .billing-address {
-  display: none;
+    display: none;
 }
 
 #billing-address-same:not(:checked)~.billing-address {
-  display: block;  
+    display: block;
 }
 
 .billing-address-same-checkbox {
-  margin: 0;
-  text-align: left;
+    margin: 0;
+    text-align: left;
 }
 
 label[for=billing-address-same] {
-  display: inline;
+    display: inline;
 }
 
 input[type=checkbox] {
     display: inline;
     width: auto;
+}
+
+.credit-card-form-body {
+    height: 180px;
+    padding: 3px 30px 20px;
+}
+
+.month select,
+.year select {
+    width: 145px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.month select {
+    float: left;
+}
+
+.year select {
+    float: right;
+}
+
+.cvv-input input {
+    float: left;
+    width: 145px;
+    padding-left: 20px;
+}
+
+.cvv-details {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.cvv-details p {
+    margin-top: 6px;
 }
