@@ -4,6 +4,57 @@ body {
     padding: 25px 0;
 }
 
+.products-list {
+    margin-bottom: 50px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .name {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.gallery .desc {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.gallery .price {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.add-to-cart-button {
+    width: 80px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #0071ff;
+    background-color: #56a1ff;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -14,7 +65,7 @@ table {
 }
 
 #shopping-cart {
-    display: block;
+    /*display: block;*/
     width: 600px;
     margin: 0 auto;
 }
@@ -32,7 +83,7 @@ table {
     display: block;
     background: #fff;
     padding: 15px 0;
-    border: 1px solid grey;
+    border: 1px solid black;
 }
 
 #cart {
@@ -129,7 +180,7 @@ td.checkout {
     text-align: right;
 }
 
-.remove-button {
+.remove-button, .add-promo-button {
     width: 60px;
     height: 25px;
     outline: none;
@@ -163,7 +214,7 @@ td.checkout {
 }
 
 .keep-shopping {
-  margin-right: 25px;
+    margin-right: 25px;
 }
 
 tr.promo-code {
