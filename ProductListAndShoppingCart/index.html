@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <title>Products Listing And Shopping Cart</title>
-	    <link type="text/css" rel="stylesheet" href="products_shoppingcart.css" />
-	</head>
-	<body>
-		
-	</body>
+
+<head>
+    <title>Products Listing And Shopping Cart</title>
+    <link type="text/css" rel="stylesheet" href="products_shoppingcart.css" />
+</head>
+
+<body>
+    <div id="shopping-cart">
+        <div id="title">
+            <h1>Shopping Cart</h1>
+        </div>
+        <div id="cart-container">
+            <table id="cart">
+                <thead>
+                    <tr>
+                        <th class="product">Product</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="description">Description</th>
+                        <th class="cost">Cost</th>
+                        <th class="remove"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="productitm">
+                        <td>
+                        	<img src="http://via.placeholder.com/120x80" class="thumb">
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="0" max="99" class="qtyinput">
+                        </td>
+                        <td>Description for Product 1</td>
+                        <td>$25.00</td>
+                        <td>
+                        	<span class="remove">
+                        		<button class="remove-button">Remove</button>
+                        	</span>
+                        </td>
+                    </tr>
+                    <tr class="productitm">
+                        <td>
+                        	<img src="http://via.placeholder.com/120x80" class="thumb">
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="0" max="99" class="qtyinput">
+                        </td>
+                        <td>Description for Product 2</td>
+                        <td>$50.00</td>
+                        <td>
+                        	<span class="remove">
+                        		<button class="remove-button">Remove</button>
+                        	</span>
+                        </td>
+                    </tr>
+                    <tr class="productitm">
+                        <td>
+                        	<img src="http://via.placeholder.com/120x80" class="thumb">
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="0" max="99" class="qtyinput">
+                        </td>
+                        <td>Description for Product 3</td>
+                        <td>$75.00</td>
+                        <td>
+                        	<span class="remove">
+                        		<button class="remove-button">Remove</button>
+                        	</span>
+                        </td>
+                    </tr>
+		          	<tr class="promo-code">
+		            	<td></td>
+		            	<td></td>
+		            	<td>Promo Code</td>
+		            	<td colspan="2"><input type="text" class="promo-code-input"></td>
+		          	</tr>                    
+                    <tr class="totalprice">
+                        <td class="total">Total:</td>
+                        <td colspan="2"></td>
+                        <td colspan="2"><span class="total-amount">$150.00</span></td>
+                    </tr>
+                    <tr class="checkoutrow">
+                        <td colspan="5" class="checkout">
+                            <button class="keep-shopping cart-footer-button">Keep Shopping</button>
+                            <button class="checkout cart-footer-button">Checkout</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
 </html>
